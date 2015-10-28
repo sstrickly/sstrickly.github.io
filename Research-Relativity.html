@@ -14,6 +14,7 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 	</head>
 	<body>
 		<div id="page-wrapper">
@@ -71,96 +72,93 @@
 						<header class="major">
 							<h2>Research - Relativity</h2>
 							<p>
-								Special and general relativity, the relativistic harmonic oscillator, and klystrons
+								Relativity, the relativistic harmonic oscillator, and klystrons
 							</p>
 						</header>
 						<div class="FigBox">
 							<div class="content">
 								<div class="container">
 									<div class="row 150%">
-										<div class="4u 12u$(medium)">
+										<div class="8u 12u$(medium) important(medium)">
+											<a href="#" class="image fit"><img src="images/Research-Relativity/Strickly-06.png" alt="" /></a>
+										</div>
+										<div class="4u$ 12u$(medium)">
 											<p>
 												<strong>The relativistically amplified musician:</strong> This musician's performance is being recorded and transmitted in order to reach a broader audience.
 												The music is captured by a microphone, amplified by a <strong>klystron</strong> and transmitted through a microwave antenna.
 												Although the klystron is shown schematically here, another schematic below shows the inner workings in more detail.
 											</p>
 										</div>
-										<div class="8u$ 12u$(medium) important(medium)">
-											<a href="#" class="image fit"><img src="images/Research-Relativity/Strickly-06.png" alt="" /></a>
-										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 						<div class="row 150%">
-							<div class="8u 12u$(medium)">
-
-								<!-- Content -->
+							<!-- Content -->
+								<div class="8u 12u$(medium)">
 									<section id="content">
+										<h3>Senior research at Wofford College</h3>
+											<p>
+												As a small liberal arts college, Wofford specializes in preparing well-rounded students who have a breadth of experience across all academic fields and a wealth of understanding in the student's major.
+												These requirements, when translated to the physics major, include two semesters of senior research guided by a professor.
+												When it came to my senior year, I wanted to dive deeper into the theoretical underpinnings of mechanics and relativity, so I set my sights for digesting <a href=#>Einstein's field equations</a>.
+												My professor, Dr. Daniel Welch, directed me to spend the first semester studying special relativity through a case study of the relativistic harmonic oscillator and the second semester studying general relativity.
+											</p>
 										<h3>What is relativity?</h3>
 											<p>
-												Things in a paragraph
+												The motivating question of relativity is: "How do two observers subject to a different set of circumstances agree on the measurements that they make?"
+												For special relativity, the difference in circumstances are differences in velocity.
+												By insisting that causal event proceed successively in all inertial reference frames, one can show many surprising result including the facts that an object with momentum will undergo length contraction, time dilation, and mass dilation.
+												For general relativity, the difference in circumstances pertain to non-inertial reference frames, which through Einstein's equivalence principle, are connected to gravitation effects.
+												Despite the unintuitive results, Einstein's theories have held up to experimental scrutiny and have been the original unification theory that combined electric and magnetic effects in a formalism that is consistent with gravity in general relativity.
+												<!-- Although the basic principles of relativity were articulated nearly a century ago, case studies serve two key roles: to contribute to the growth of young scientists in digesting the basic principles and to see how the unintuitive predictions manifest in different circumstances. -->
 											</p>
-											<ul>
-												<li>Effects of momentum on other properties of a thing.</li>
-												<li>How do measurements transfer between reference frames?</li>
-												<li>Einstein noted that the concept of simultaneity is relative but instead that the speed of light is what is constant.</li>
-												<li>Leads to strange consequences such as infinite momentum with finite speed</li>
-												<li>Accounts for gravity</li>
-											</ul>
-										<h3>Goals of the research</h3>
-											<p>
-												Other things in a paragraph
-											</p>
-											<ul>
-												<li>Endeavor into theoretical studies</li>
-												<li>Understand the principles of general and special relativity</li>
-												<li>Learn differential geometry, in particular the difference between tangent and cotangent spaces</li>
-											</ul>
 										<h3>The simple and the relativistic harmonic oscillators</h3>
 											<p>
-												Another paragraph <a href="#Fig1">Fig 1</a>
+												The simple harmonic oscillator serves as a <a href=#>touchstone</a> for many problems that involve bounded repetitive motion partly because the simple quadratic potential has an analytic solution and partly because more complex potentials that result in bounded repetitive motion have the quadratic potential as the lowest order term in its polynomial expansion.
+												As shown in <a href="#Fig1">figure 1</a>, the simple harmonic oscillator consists of a mass connected to a spring which in turn is connected to a fixed location.
+												The spring applies a force on the mass, directing the mass to return to a point in the middle of the oscillation, the equilibrium point ($$x = 0$$).
+												The force applied by the spring changes the momentum of the mass, which results in the mass having a maximal momentum when it returns to the equilibrium point.
+												The momentum then carries the mass though the equilibrium point to the other side of the oscillation.
+												When viewed in phase space (a plot of momentum/velocity vs position), the simple harmonic oscillator makes elliptical trajectories.
 											</p>
-											<ul>
-												<li>Formulation</li>
-												<li>Simulation</li>
-												<li>Findings and how to read a phase plot</li>
-											</ul>
+											<p>
+												The relativistic harmonic oscillator takes the quadratic potential from the simple harmonic oscillator and extends the analysis to the high velocity limit (e.g. it is not until $$0.87 c$$ that the <a href="https://en.wikipedia.org/wiki/Lorentz_factor#/media/File:Lorentz_factor.svg">Lorentz factor</a> doubles).
+												In this limit, the mass can have an arbitrarily large momentum, but the velocity of the mass is limited to be below $$c$$.
+												As a result, the trajectory of the relativistic harmonic oscillator differs from the simple harmonic oscillator not only in the regions of phase space at high momentum but also in the period of oscillation.
+											</p>
+											<p>
+												In addition to formulating the equations of motion with Newtonian mechanics as well as with the relativistic Lagrangian and Hamiltonian formalisms, I developed a variation of the Runge-Kutta method for numerically integrating the non-linear equations of motion.
+												I also consulted the literature to verify that my analysis was consistent with <a href=#>previous findings</a>.
+											</p>
 										<h3>Implications for klystrons</h3>
 											<p>
-												More paragraphs? <a href="#Fig2">Fig 2</a>
+												Klystrons (shown schematically in <a href="#Fig2">figure 2</a>) take an otherwise uniform-density high-energy electron beam and induce an instability that bunches the electron density.
+												This bunching process mimics the simple / relativistic harmonic oscillator in that the electrons are subject to a force that changes sinusoidally in time while the particle travels across the cavity.
+												As a result, the individual electrons follow trajectories similar to those depicted in <a href="#Fig1">figure 1</a>.
+												If the electron beam is initially non-relativistic, then the oscillating electric field will have a significant effect on the velocity change of the individual electrons; however if the beam is relativistic, then the velocity change will be much smaller.
+												The amount of velocity change affects the rate that the electron bunch happens and therefore the necessary length of the klystron tube needed to achieve optimal signal output. 
 											</p>
-											<ul>
-												<li>What are klystrons and what are they used for?</li>
-												<li>Schematic and setup</li>
-												<li>High kinetic energy (sometimes relativistic) electrons clump due to input signal.</li>
-												<li>Implications in the relativistic limit, Fourier analysis?</li>
-											</ul>
-										<!--
-											<h3>General relativity and Newtonian gravity</h3>
-												<p>
-													Can't this be done already?!?!?!?!?
-												</p>
-												<ul>
-													<li>Motivation</li>
-													<li>Gained insights</li>
-													<li>Explain image</li>
-												</ul>
-										-->
+										<h3>General relativity and Newtonian gravity</h3>
+											<p>
+												During the second semester of research, I wanted to understand general relativity, in particular the concepts associated with curved space-time and how it related to gravitation.
+												Most of my work was in studying tensor algebra, differential geometry, tangent and cotangent space, the Levi-Cevita connection, and the curvature tensors; however, at the end of the semester, I was able to digest the <a href=#>Newtonian approximation</a> of Einsteinian gravity as well as the <a href=#>Schwarzschild metric</a>.
+												In hindsight, this research experience was useful for my work with surfactants (see the appendix to my <a href=#>dissertation</a>) since a curved four-dimensional space-time requires the same mathematics as a dynamic curved two-dimensional surfactant-covered fluid surface: differential geometry.
+											</p>
 									</section>
-
-							</div>
-							<div class="4u$ 12u$(medium)">
-
-								<!-- Sidebar -->
+								</div>
+							<!-- Sidebar -->
+								<div class="4u$ 12u$(medium)">
 									<section id="sidebar">
 										<a name="Fig1"></a>
 										<section>
 											<h3>Relativistic and simple oscillators</h3>
 											<a href="#" class="image fit"><img src="images/Research-Relativity/RHO.png" alt="" /></a>
 												<p>
-													Make the figure above a video of the spreading dynamics.
-													Let this text be a brief caption.
+													A harmonic oscillator (top) consists of a massive object with mass $$m_0$$ connected to a fixed point via a spring with a spring constant of $$k$$.
+													The bottom two graphs show the phase space plots of both the simple (SHO) and relativistic (RHO) harmonic oscillators.
+													Qualitatively, these plots show that when the mass is at the equilibrium point, it experiences no force; however, when the mass is away from the equilibrium, the spring pushes on the mass, changing its momentum, so that the mass eventually returns to the equilibrium point with a maximal momentum.
+													These plots are made for a particle that would be highly relativistic.
 												</p>
 											<footer>
 												<ul class="actions">
@@ -174,8 +172,13 @@
 											<h3>Schematic of a Klystron</h3>
 											<a href="https://upload.wikimedia.org/wikipedia/commons/a/aa/Klystron.enp.gif" class="image fit"><img src="https://upload.wikimedia.org/wikipedia/commons/a/aa/Klystron.enp.gif" alt="" /></a>
 												<p>
-													Make the figure above a video of the spreading dynamics.
-													Let this text be a brief caption.
+													A klystron (shown schematically above) amplifies RF and microwave electromagnetic signals.
+													An otherwise high-energy uniform electron beam (generated and focused using the leftmost cathode and anode) is directed down the length of the klystron tube.
+													The input electromagnetic signal accelerates/decelerates electrons in the "buncher cavity" so that over the course of the rest of the beam flight, the electrons bunch, making regions of high density and regions of low density.
+													The acceleration/deceleration of the electrons in the "buncher cavity" mimic the simple (or relativistic) harmonic oscillator.
+													Near the end of the tube, the bunched electron beam passes through a "catcher cavity" giving off a signal much stronger than the input.
+													The remaining energy in the beam is collected and dissipated as heat.
+													Most klystrons also have focusing/rectification cavities to ensure that the high energy output signal has the correct wave form.
 												</p>
 											<footer>
 												<ul class="actions">
@@ -184,8 +187,7 @@
 											</footer>
 										</section>
 									</section>
-
-							</div>
+								</div>
 						</div>
 					</div>
 				</div>
