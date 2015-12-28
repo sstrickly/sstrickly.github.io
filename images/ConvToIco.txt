@@ -1,9 +1,0 @@
-A cool bit that I want to remember later.
-How to convert from an image format to ICO:
-
-See: http://stackoverflow.com/questions/3185677/converting-gifs-pngs-and-jpgs-to-ico-files-using-imagemagick
-
-convert -resize x16 -gravity center -crop 16x16+0+0 waveform.png -background transparent -flatten -colors 256 waveform.ico
-
-
-
